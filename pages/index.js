@@ -1,5 +1,9 @@
 import Head from 'next/head'
 import Navbar from '../pages/components/navbar'
+import Main from '../pages/components/FrontPage'
+import AboutMe from '../pages/components/AboutMe'
+import Skills from '../pages/components/Skills'
+import Projects from '../pages/components/Projects'
 
 export default function Home() {
   return (
@@ -10,6 +14,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head> 
       <Navbar/>
+      <Main/>
+      <AboutMe/>
+      <Skills/>
+      <Projects/>
     </div>
   )
 }
