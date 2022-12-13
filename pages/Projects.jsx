@@ -1,6 +1,6 @@
 import React from 'react';
-import betterpractice from '/public/photos/BetterPractice.png';
-import Minesweeper from '/public/photos/Minesweeper.png';
+import betterpractice from '/public/static/photos/BetterPractice.png'; 
+import Minesweeper from '/public/static/photos/Minesweeper.png';
 import ProjectItem from '../components/projectitems';
 const Projects = ()=>{
     return(
