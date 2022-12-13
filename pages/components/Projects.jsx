@@ -11,13 +11,13 @@ const Projects = ()=>{
                     <ProjectItem
                         title='Northwestern Practice Room Tracker'
                         backgroundImg={betterpractice}
-                        projectUrl='/practice'
+                        projectUrl='https://devpost.com/software/betterpractice'
                         description='Fullstack Web Application'
                         />
                     <ProjectItem
                         title='Minesweeper'
                         backgroundImg={Minesweeper}
-                        projectUrl='/tbd'
+                        projectUrl='https://github.com/isaacsun0813/minesweeper'
                         description='Fully developed game in C++'
                         />
                 </div>

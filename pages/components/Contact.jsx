@@ -1,4 +1,6 @@
 import React from 'react';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import Link from 'next/link'
 import {HiOutlineChevronDoubleUp} from 'react-icons/hi'
 import {FaGithub, FaLinkedin} from 'react-icons/fa';
@@ -6,6 +8,19 @@ import {BsFillPersonLinesFill} from 'react-icons/bs';
 import {AiOutlineMail} from 'react-icons/ai';
 
 const Contact =()=>{
+    const form = useRef()
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_ol2t5ku', 'service_ol2t5ku', form.current, 'ZuQw4rWgIhPGHzIA6')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset();
+      };
     return(
         <div id='contact' className='w-full lg:h-screen'>
             <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
@@ -47,13 +62,14 @@ const Contact =()=>{
                     {/*Right side*/}
                     <div className='col-span-3 w-full lg:p-4 h-auto shadow-xl shadow-gray-400 rounded-xl '>
                         <div className='p-4'>
-                            <form>
+                            <form ref= {form} onSubmit={sendEmail}>
                                 <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                                     <div className='flex flex-col'>
-                                        <label className='uppercase text-sm py-2'>
+                                        <label  className='uppercase text-sm py-2'>
                                             Name
                                         </label>
                                         <input 
+                                        name="name"
                                         className='border-2 rounded-lg p-3 flex border-gray-300' 
                                         type="text"
                                         />
@@ -63,6 +79,7 @@ const Contact =()=>{
                                            Phone Number
                                         </label>
                                         <input 
+                                        name = "digits"
                                         className='border-2 rounded-lg p-3 flex border-gray-300' 
                                         type="text"
                                         />
@@ -70,7 +87,8 @@ const Contact =()=>{
                                 </div>
                                 <div className='flex flex-col py-2'>
                                     <label className='uppercase text-sm py-2'> Email</label>
-                                    <input 
+                                    <input
+                                        name="from_email" 
                                         className='border-2 rounded-lg p-3 flex border-gray-300' 
                                         type="Email"
                                         />
@@ -78,19 +96,19 @@ const Contact =()=>{
                                 <div className='flex flex-col py-2'>
                                     <label className='uppercase text-sm py-2'>Subject</label>
                                     <input 
+                                        name="subject"
                                         className='border-2 rounded-lg p-3 flex border-gray-300' 
                                         type="text"
                                         />
                                 </div>
                                 <div className='flex flex-col py-2'>
                                     <label className='uppercase text-sm py-2'>Message</label>
-                                    <textarea className='border-2 rounded-lg p-3 border-gray-300' rows='10'>
+                                    <textarea name="message" className='border-2 rounded-lg p-3 border-gray-300' rows='10'>
                                     </textarea>
                                 </div>
-                                <button className='w-full p-4 text-gray-100 mt-3'> Send Message </button>
+                                <button className='w-full p-4 text-[#5651e5] mt-4' type ='submit'> Send Message </button>
                             </form>
-
-                        </div>
+                        </div> 
                     </div>
                 </div>
                 <div className='flex justify-center py-12'>

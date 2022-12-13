@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import {FaGithub, FaLinkedin} from 'react-icons/fa';
 import {BsFillPersonLinesFill} from 'react-icons/bs';
 import {AiOutlineMail} from 'react-icons/ai';
@@ -19,11 +20,15 @@ const Main = () =>{
                         and Tuba Peformance @ Northwestern University. 
                     </p>
                     <div className='flex items-center justify-between max-w-[330px] m-auto py-6'>                                
-                        <div className='shadow-lg rounded-full shadow-gray-400 p-5 cursor-pointer hover:scale-05 ease-in duration-300'>                
-                            <FaLinkedin/>
+                        <div className='shadow-lg rounded-full shadow-gray-400 p-5 cursor-pointer hover:scale-05 ease-in duration-300'>    
+                            <Link href='https://www.linkedin.com/in/isaacsun1/'>
+                                <FaLinkedin/>
+                            </Link>          
                         </div>
                         <div className='shadow-lg rounded-full shadow-gray-400 p-5 cursor-pointer hover:scale-05 ease-in duration-300'>
-                             <FaGithub/>
+                            <Link href='https://github.com/isaacsun0813'>
+                                <FaGithub/>
+                            </Link>
                         </div>
                         <div className='shadow-lg rounded-full shadow-gray-400 p-5 cursor-pointer hover:scale-05 ease-in duration-300'>
                             <AiOutlineMail/>
