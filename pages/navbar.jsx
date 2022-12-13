@@ -30,7 +30,7 @@ const Navbar=()=>{
                         : 'fixed w-full h-20 z-[100]'}>
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
                 <Link href='/'>
-                    <Image src={"/logo.JPEG"} alt="logo" width='125' height='50'/>
+                    <Image src={"/static/images/logo.JPEG"} alt="logo" width='125' height='50'/>
                 </Link>
                 <div>
                     <ul className='hidden md:flex'>
