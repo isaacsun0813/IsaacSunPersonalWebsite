@@ -11,7 +11,7 @@ const Skills = () =>{
                 <h2 className='py-4'> Backend</h2>
                 <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
                     <SkillItem
-                        filename='/static/photos/python.png'
+                        filename='/static/photos/Python.png'
                         width = '100'
                         language='Python'
                         />
@@ -56,7 +56,7 @@ const Skills = () =>{
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image 
-                                src = '/static/photos/SQL.JPEG' 
+                                src = '/static/photos/SQL.jpeg' 
                                 width='100'
                                 height='100'
                                 alt='/'
