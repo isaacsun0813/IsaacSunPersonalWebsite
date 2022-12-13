@@ -105,7 +105,7 @@ const Skills = () =>{
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image 
-                                src = '/static/photos/javascript.png' 
+                                src = '/static/photos/JavaScript.png' 
                                 width='100'
                                 height='100'
                                 alt='/'
