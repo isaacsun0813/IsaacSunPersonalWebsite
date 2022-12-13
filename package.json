@@ -2,7 +2,7 @@
   "name": "is_portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://isaacsun0813.github.io/react-gh-pages",
+  "homepage": "https://isaacsun0813.github.io/isaacsun0813.github.io",
   "scripts": {
     "dev": "next dev",
     "predeploy": "npm run build",
