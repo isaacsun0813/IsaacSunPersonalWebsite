@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import SkillItem from './skillsItems';
+import SkillItem from '../components/skillsItems';
 const Skills = () =>{
     return (
         <div id='skills' className='w-full lg:h-screen p-2'>

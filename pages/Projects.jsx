@@ -1,7 +1,7 @@
 import React from 'react';
-import betterpractice from '/public/photos/BetterPractice.JPEG';
+import betterpractice from '/public/photos/BetterPractice.png';
 import Minesweeper from '/public/photos/Minesweeper.png';
-import ProjectItem from './projectitems';
+import ProjectItem from '../components/projectitems';
 const Projects = ()=>{
     return(
         <div id='projects' className='w-full'>

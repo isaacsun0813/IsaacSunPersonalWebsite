@@ -51,7 +51,6 @@ const Navbar=()=>{
                         </Link>
                     </ul>
                     <div onClick={handleNav} className='shadow-lg shadow-gray-400 p-1 cursor-pointer hover:scale-05 ease-in duration-300 md:hidden'>
-                        {/* maybe change this it's a little aesthetically unpleasing */}
                         <AiOutlineMenu size={25} />
                     </div>
                 </div>

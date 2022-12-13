@@ -58,8 +58,6 @@ const Contact =()=>{
                         </div>
                         </div>
                     </div>
-
-                    {/*Right side*/}
                     <div className='col-span-3 w-full lg:p-4 h-auto shadow-xl shadow-gray-400 rounded-xl '>
                         <div className='p-4'>
                             <form ref= {form} onSubmit={sendEmail}>
